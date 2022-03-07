@@ -1067,7 +1067,7 @@ ul.menu-header-centered>li {
   }
 
   .card-1 {
-	background: radial-gradient(#1fe4f5, #3fbafe);
+	background: radial-gradient(#072E11, #072E11);
   }
   
 
@@ -1091,7 +1091,7 @@ ul.menu-header-centered>li {
 
 
 h4 {
-	margin-bottom: 4rem;
+	
 }
 
 
@@ -1127,7 +1127,7 @@ footer {
     border-top: 3px solid #A7D046;
 }
 
-.img-banner-tow {
+.img-banner-two {
 
 	background-size: contain;
 	height: 100%;
@@ -1782,8 +1782,10 @@ ul.oferta>:nth-child(3) {
 }
 
 a {
-	text-decoration: none !important;
-	color: #666;
+	font-size: 14px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: left;
 }
 
 .list-item:hover {
@@ -2310,7 +2312,7 @@ ul.menu-responsivo ul.social li {
 /* MAIN */
 
 .container {
-	max-width: 1150px;
+	max-width: 1170px;
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
