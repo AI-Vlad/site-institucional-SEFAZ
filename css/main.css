@@ -3,7 +3,7 @@
 a{
 	font-size: 14px;
     color: #FFF;
-    font-weight: 700;
+    font-weight: 300;
     text-align: left;
 }
 
@@ -201,7 +201,7 @@ ul.menu-responsivo ul.social li{
 
 .panel-heading {
     padding: 10px 15px;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid white;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
