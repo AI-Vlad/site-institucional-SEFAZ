@@ -226,22 +226,26 @@
 
     <nav class="navbar" role="navigation" style="background-color:#E5E5E5; border-color:#E5E5E5; margin:0;     position: relative;
     min-height: 50px; margin-bottom: 20px; border: 1px solid transparent;">
-        <div class="container">
+        <div class="container" style="padding: 0 !important;">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menutop">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button class="hamburger navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#menutop" aria-controls="menutop" aria-expanded="false"
+                    aria-label="Toggle navigation" data-uw-styling-context="true" style="border: 1px solid !important;">
+                    ☰
+                </button>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
                 </button>
 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="navbar-collapse" id="menutop">
-                <div class=""
+            <div class="navbar-collapse collapse" id="menutop">
+                <div class="navbar-nav-responsive"
                     style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-                    <ul class="col-md-2"
+                    <ul class="col-md-2 col-sm-12 col-xs-12 navbar-nav-responsive  burguer-menu"
                         style="display: flex; flex-direction: row; justify-content: space-between; margin: 0 !important;">
                         <li>
                             <a href="https://www.sef.sc.gov.br"><img alt=""
@@ -256,7 +260,7 @@
                                     src="https://www.sef.sc.gov.br/layout/site/images/icones/instagram.png"></a>
                         </li>
                     </ul>
-                    <ul class="col-md-8"
+                    <ul class="col-md-8 col-sm-12 col-xs-12 navbar-nav-responsive"
                         style="display: flex; flex-direction: row; justify-content: space-between; margin: 0 !important;">
                         <li>
                             <a style="color: #6F5D5E !important;  text-decoration: none;"
@@ -341,14 +345,14 @@
                             method="get">
                             <div>
                                 <input type="text" id="s" name="s" value="" placeholder="Pesquisar.."
-                                    style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: 3px; font-size: initial; color: black !important">
+                                    style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: 3px; font-size: initial; color: black !important; margin-bottom: 20px;">
                                 <input type="submit" value="Buscar" id="searchsubmit">
                             </div>
                         </form>
                     </div>
                     <div class="col-md-3  d-none d-md-block d-lg-block" data-uw-styling-context="true"
                         style="display: flex !important; justify-content: right; align-items: center;">
-                        <div class="LogoGovernoDoEstadoDeMatoGrossoDoSul" data-uw-styling-context="true">
+                        <div class="LogoGovernoDoEstadoDeMatoGrossoDoSul d-none" data-uw-styling-context="true">
                             <img src="./img/logo_ms-trans.png" alt="">
                         </div>
                     </div>
@@ -362,47 +366,58 @@
 
                 <button class="hamburger navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation" data-uw-styling-context="true">
+                    aria-label="Toggle navigation" data-uw-styling-context="true" style="border: 1px solid;">
                     ☰
                 </button>
-
-                <div style="display: flex; width: 100%;">
-                    <ul
-                        style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%; margin: unset;">
-                        <li>
-                            <a href="" style="color: #fff !important;">SOBRE A SEFAZ</a>
-                        </li>
-                        <li>
-                            <a href="" style="color: #fff !important;">SERVIÇOS DE A a Z</a>
-                        </li>
-                        <li>
-                            <a href="" style="color: #fff !important;">CANAIS DE ATENDIMENTO</a>
-                        </li>
-                        <li>
-                            <a href="" style="color: #fff !important;">LEGISLAÇÃO</a>
-                        </li>
-                        <li>
-                            <a href="" style="color: #fff !important;">ICMS</a>
-                        </li>
-                        <li>
-                            <a href="" style="color: #fff !important;">IPVA</a>
-                        </li>
-                        <li>
-                            <a href="" style="color: #fff !important;">ITCD</a>
-                        </li>
-                        <li>
-                            <a href="" style="color: #fff !important;">CALENDÁRIO FISCAL</a>
-                        </li>
-                        <li>
-                            <a href="" style="color: #fff !important;">TAXAS DE SERVIÇOS</a>
-                        </li>
-                        <li>
-                            <a href="" style="color: #fff !important;">UFERMS</a>
-                        </li>
-                        <li>
-                            <a href="" style="color: #fff !important;">UAM</a>
-                        </li>
-                    </ul>
+                <div class="navbar-collapse collapse" id="navbarResponsive">
+                    <div style="display: flex; width: 100%;">
+                        <ul class="navbar-nav-responsive"
+                            style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%; margin: unset;">
+                            <li>
+                                <a href="" style="color: #fff !important;">SOBRE A SEFAZ</a>
+                            </li>
+                            |
+                            <li>
+                                <a href="" style="color: #fff !important;">SERVIÇOS DE A a Z</a>
+                            </li>
+                            |
+                            <li>
+                                <a href="" style="color: #fff !important;">CANAIS DE ATENDIMENTO</a>
+                            </li>
+                            |
+                            <li>
+                                <a href="" style="color: #fff !important;">LEGISLAÇÃO</a>
+                            </li>
+                            |
+                            <li>
+                                <a href="" style="color: #fff !important;">ICMS</a>
+                            </li>
+                            |
+                            <li>
+                                <a href="" style="color: #fff !important;">IPVA</a>
+                            </li>
+                            |
+                            <li>
+                                <a href="" style="color: #fff !important;">ITCD</a>
+                            </li>
+                            |
+                            <li>
+                                <a href="" style="color: #fff !important;">CALENDÁRIO FISCAL</a>
+                            </li>
+                            |
+                            <li>
+                                <a href="" style="color: #fff !important;">TAXAS DE SERVIÇOS</a>
+                            </li>
+                            |
+                            <li>
+                                <a href="" style="color: #fff !important;">UFERMS</a>
+                            </li>
+                            |
+                            <li>
+                                <a href="" style="color: #fff !important;">UAM</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -445,14 +460,16 @@
                         style="display: flex; justify-content: center; align-items: center; border-radius: 6px; border: 1px solid #fff; min-width: 225px; height: 98px; background-color: #eee;">
                         <a href="https://www.sef.sc.gov.br/midia/noticia/3119">
                             <b style="color: #53824a">21/02/2022</b> <br>
-                            <font style="font-size:12px; color: #666;">Mais oito cidades definem projetos do Plano 1000</font>
+                            <font style="font-size:12px; color: #666;">Mais oito cidades definem projetos do Plano 1000
+                            </font>
                         </a>
                     </div>
                     <div class="col-md-6"
                         style="display: flex; justify-content: center; align-items: center; border-radius: 6px; border: 1px solid #fff; min-width: 225px; height: 98px; background-color: #eee;">
                         <a href="https://www.sef.sc.gov.br/midia/noticia/3117">
                             <b style="color: #53824a">20/02/2022</b> <br>
-                            <font style="font-size:12px; color: #666;">Plano 1000: Cerca de R$ 100 milhões em projetos aprovados para
+                            <font style="font-size:12px; color: #666;">Plano 1000: Cerca de R$ 100 milhões em projetos
+                                aprovados para
                                 36
                                 municípios</font>
                         </a>
@@ -461,7 +478,8 @@
                         style="display: flex; justify-content: center; align-items: center; border-radius: 6px; border: 1px solid #fff; min-width: 225px; height: 98px; background-color: #eee;">
                         <a href="https://www.sef.sc.gov.br/midia/noticia/3116">
                             <b style="color: #53824a">17/02/2022</b> <br>
-                            <font style="font-size:12px; color: #666;">Plano 1000 firma compromisso de R$ 94,8 milhões para 14
+                            <font style="font-size:12px; color: #666;">Plano 1000 firma compromisso de R$ 94,8 milhões
+                                para 14
                                 municípios
                             </font>
                         </a>
@@ -470,14 +488,16 @@
                         style="display: flex; justify-content: center; align-items: center; border-radius: 6px; border: 1px solid #fff; min-width: 225px; height: 98px; background-color: #eee;">
                         <a href="https://www.sef.sc.gov.br/midia/noticia/3115">
                             <b style="color: #53824a">16/02/2022</b> <br>
-                            <font style="font-size:12px; color: #666;">Com reajuste médio de 10,5%, salário mínimo regional é aprovado
+                            <font style="font-size:12px; color: #666;">Com reajuste médio de 10,5%, salário mínimo
+                                regional é aprovado
                                 pela Alesc</font>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6" style="display: flex; flex-direction: row; margin-top: 30px; padding: 0px;">
-                <div class="col-md-6" style="flex-direction: column; flex-wrap: wrap;">
+            <div class="col-md-6 navbar-nav-responsive"
+                style="display: flex; flex-direction: row; margin-top: 30px; padding: 0px;">
+                <div class="col-md-6 col-sm-12 col-xs-12" style="flex-direction: column; flex-wrap: wrap;">
                     <div class="box1home panel panel-default">
                         <div class="box1home panel-heading" style="color: #fff; background-color: #416C42;">
                             <h4>SERVIÇO PARA</h4>
@@ -530,7 +550,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="box1home panel panel-default">
                         <div class="box1home panel-heading" style="color: #fff; background-color: #416C42;">
                             <h4>MAIS ACESSADOS</h4>
